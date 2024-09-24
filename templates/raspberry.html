@@ -1,6 +1,13 @@
 {% extends "base.html" %}
 {% block raspberry %}
-  température = {{ temp.temp }}
-  </br>
-  humidité = {{ temp.hum }}
+<div class="container">
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">{{ temp.name }}</h5>
+      <h6 class="card-subtitle mb-2 text-body-secondary">{{ temp.date_time}}</h6>
+    température = {{ temp.temp }}
+    </br>
+    humidité = {{ temp.hum }}
+  </div>
+</div>
 {% endblock %}
